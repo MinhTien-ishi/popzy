@@ -119,7 +119,7 @@ Popzy.prototype.open = function () {
 
     // Disable scrolling
     document.body.classList.add("popzy--no-scroll");
-    document.body.style.paddingRight = this._getScrollbarWidth + "px";
+    document.body.style.paddingRight = this._getScrollbarWidth() + "px";
 
     // Attach event listeners
     if (this._allowBackdropClose) {
